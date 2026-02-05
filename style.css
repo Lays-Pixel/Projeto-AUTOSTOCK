@@ -105,6 +105,12 @@ transition: 0.3s;
 .btn:hover {
 background: #003af8;
 }
-.frase{
-    align-items: center;
+
+.btncadastro {
+   width: 25%;
+padding: 10px;
+background: #25D366;
+color: white;
+font-weight: bold;
+border-radius: 6px;  
 }
