@@ -8,14 +8,15 @@ font-family: Arial, sans-serif;
 body {
 height: 100vh;
 background: linear-gradient(135deg, #f4f6f9, #ffffff);
-display: flex;
-justify-content: center;
-align-items: center;
+
 }
 
 .container {
 width: 100%;
 max-width: 400px;
+display: flex;
+justify-content: center;
+align-items: center;
 }
 
 .login-box {
@@ -49,11 +50,13 @@ h2 {
 font-size: 18px;
 color: #2c3e50;
 margin-bottom: 5px;
+text-align: center;
 }
 
 h3 {
 margin-bottom: 25px;
 color: #333;
+text-align: center;
 }
 
 .input-group {
