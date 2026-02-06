@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de Prateleiras</title>
+    <link rel="stylesheet" href="capratileira.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Cadastro de prateleiras</h2>
+
+        <div class="form-group">
+            <label for="capacidade">Capacidade das prateleiras:</label>
+            <select id="capacidade">
+                <option value="">Selecione</option>
+                <option value="50">50 unidades</option>
+                <option value="100">100 unidades</option>
+                <option value="200">200 unidades</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="data">Data de cadastro:</label>
+            <input type="date" id="data">
+        </div>
+
+        <button onclick="cadastrar()">CADASTRAR</button>
+    </div>
+
+    <script src="capratileira.js"></script>
+</body>
+</html>
