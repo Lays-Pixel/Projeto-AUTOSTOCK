@@ -1,22 +1,11 @@
-* {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-font-family: Arial, sans-serif;
-}
-
-body {
-height: 100vh;
-background: linear-gradient(135deg, #f4f6f9, #ffffff);
-
-}
 
 .container {
 width: 100%;
 max-width: 400px;
-display: flex;
 justify-content: center;
 align-items: center;
+margin-left: 700px;
+margin-top: 200px;
 }
 
 
@@ -107,7 +96,7 @@ background: #003af8;
 }
 
 .btncadastro {
-   width: 25%;
+   width: 35%;
 padding: 10px;
 background: #25D366;
 color: white;
