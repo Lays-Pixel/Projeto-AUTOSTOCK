@@ -3,42 +3,30 @@
 
 <head>
     <title>Projeto AUTOSTOCK tela cadastro usuário</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="telacadastro.css">
 </head>
 
 <body>
-<div class="container">
-  
+<div class="form-container">
+     
     <h2
         style="color: #6683E2;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; ">
         SEJA BEM-VINDO! </h2>  
     <h3 style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">FAÇA O SEU CADASTRO E DESCUBRA O PODER DA OTIMIZAÇÃO COM AUTOSTOCK.</h3>
-    
-
-    <form>
-        <div style="align-content: center;" class="input-group">
-            <label style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Nome do usuário</label>
-            <input type="text" placeholder="Digite seu usuário">
-        </div>
-
-        <div style="align-content: center;" class="input-group">
-            <label style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">CPF</label>
-            <input type="number" placeholder="Digite o seu CPF">
-        </div>
-
-        <div style="align-content: center;" class="input-group">
-            <label style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Email</label>
-            <input type="email" placeholder="Digite o seu Email">
-        </div>
-
-        <div style="align-content: center;" class="input-group">
-            <label style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Senha</label>
-            <input type="senha" placeholder="Digite a sua Senha">
-        </div>
-
-        <button type="submit" class="btn"> Finalizar Cadastro</button>
+      
+    <form name="formulario" action="#" method="post">
+        
+            <input type="text" id="usuario"  placeholder="Digite seu usuário">
+            <input type="text" id="CPF" autocomplete="off" maxlength="14" placeholder="Digite o seu CPF">
+            <input type="email" id="Email" placeholder="Digite o seu Email">      
+            <input type="password"  id="senha" placeholder="Digite a sua Senha">     
+            <input type="password"  id="confsenha" placeholder="Confirmar Senha">        
+            <input type="submit" onclick="return validar()" value="Finalizar Cadastro">
  </form>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="telacadastro.js"></script>
 </div>
+       
 </body>
 
 </html>
