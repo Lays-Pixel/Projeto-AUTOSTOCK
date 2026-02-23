@@ -26,7 +26,7 @@ input.addEventListener('keypress', () => {
 
 })
 
-function validar() {
+function validar() { 
     const usuario = formulario.usuario.value;
     const CPF = formulario.CPF.value;
     const senha = formulario.senha.value;
@@ -86,3 +86,22 @@ function exibirAlerta(icone, titulo, texto) {
         text: texto,
     });
 }
+
+fetch('https://jsonplaceholder.typicode.com/users', {
+method: 'POST',
+headers: {
+'Content-Type': 'application/json',
+},
+body: JSON.stringify({
+usuario: 'usuario',
+cpf: 'cpf',
+email: 'g@mail.com',
+senha: 'senha'
+}),
+}).then(response => response.json())
+.then(data => console.log(data))
+
+
+
+
+
