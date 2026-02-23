@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Entrega</title>
+    <link rel="stylesheet" href="../css/entrega.css">
+</head>
+<body>
+
+    <header class="topo">
+        <div class="titulo">
+            📦 ENTREGA
+        </div>
+        <div class="logo">
+            AUTOSTOCK
+        </div>
+    </header>
+
+    <div class="card">
+        <h2>INFORMAÇÕES DE CADASTRO</h2>
+
+        <div class="form-group">
+            <label>N da entrega:</label>
+            <input type="text" id="numeroEntrega" placeholder="0000000000">
+        </div>
+
+        <div class="form-group">
+            <label>Tipo de produto:</label>
+            <input type="text" id="tipoProduto">
+        </div>
+
+        <div class="form-group">
+            <label>Quantidade de entregas:</label>
+            <input type="number" id="quantidade">
+        </div>
+
+        <div class="form-group">
+            <label>Data da entrega:</label>
+            <input type="date" id="dataEntrega">
+        </div>
+    </div>
+
+    <div class="prateleiras">
+
+        <div class="item completa">
+            <h4>PRATELEIRA 2A</h4>
+            <p>COMPLETA</p>
+            <button class="indisponivel" disabled>INDISPONÍVEL</button>
+        </div>
+
+        <div class="item parcial">
+            <h4>PRATELEIRA 2A</h4>
+            <p>PARCIALMENTE COMPLETA</p>
+            <button onclick="selecionar(this)">ESCOLHER</button>
+        </div>
+
+        <div class="item completa">
+            <h4>PRATELEIRA 4C</h4>
+            <p>COMPLETA</p>
+            <button class="indisponivel" disabled>INDISPONÍVEL</button>
+        </div>
+
+        <div class="item livre">
+            <h4>PRATELEIRA 2A</h4>
+            <p>LIVRE</p>
+            <button onclick="selecionar(this)">ESCOLHER</button>
+        </div>
+
+        <div class="item livre">
+            <h4>PRATELEIRA 2B</h4>
+            <p>LIVRE</p>
+            <button onclick="selecionar(this)">ESCOLHER</button>
+        </div>
+
+        <div class="item parcial">
+            <h4>PRATELEIRA 3A</h4>
+            <p>PARCIALMENTE COMPLETA</p>
+            <button onclick="selecionar(this)">ESCOLHER</button>
+        </div>
+
+    </div>
+
+    <div class="botao-final">
+        <button onclick="concluirCadastro()">CONCLUIR CADASTRO</button>
+    </div>
+
+    <script src="../js/ENTREGA.JS"></script>
+</body>
+</html>
