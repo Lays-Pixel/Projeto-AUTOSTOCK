@@ -56,7 +56,9 @@ function validar() {
         exibirAlerta('warning', 'E-mail inválido', "Preencha o campo e-mail!");
         return false
 }
+
 }
+
 
 exibirAlerta('success', 'Tudo Certo!', 'Cadastro realizado com sucesso!')
 
