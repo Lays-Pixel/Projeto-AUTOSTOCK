@@ -2,16 +2,31 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const form = document.getElementById("formEntregas");
 
-    form.addEventListener("submit", function (event) {
-        event.preventDefault(); // Impede recarregar a página
+ 
+    fetch('https://jsonplaceholder.typicode.com/users')
+        .then(response => {
+            if (!response.ok) {
+                throw new Error("Erro na requisição");
+            }
+            return response.json();
+        })
+        .then(data => {
+            console.log("Usuários recebidos da API:");
+            console.table(data); 
+        })
+        .catch(error => {
+            console.error("Erro ao buscar usuários:", error);
+        });
 
-        // Pegando valores
+
+    form.addEventListener("submit", function (event) {
+        event.preventDefault();
+
         const numero = document.getElementById("numeroEntrega").value;
         const tipo = document.getElementById("tipoProduto").value;
         const quantidade = document.getElementById("quantidadeEntrega").value;
         const data = document.getElementById("dataEntrega").value;
 
-        // Validação
         if (numero === "" || tipo === "" || quantidade === "" || data === "") {
             alert("⚠️ Preencha todos os campos!");
             return;
@@ -22,7 +37,6 @@ document.addEventListener("DOMContentLoaded", function () {
             return;
         }
 
-        // Criando objeto
         const entrega = {
             numeroEntrega: Number(numero),
             tipoProduto: tipo,
@@ -34,7 +48,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         alert("✅ Entrega cadastrada com sucesso!");
 
-        form.reset(); // limpa formulário
+        form.reset();
     });
 
 });

@@ -3,16 +3,14 @@ document.addEventListener("DOMContentLoaded", function () {
     const form = document.forms["formulario"];
 
     form.addEventListener("submit", function (event) {
-        event.preventDefault(); // Impede o envio padrão do formulário
+        event.preventDefault();
 
-        // Pegando valores
         const quantidadePrateleiras = document.getElementById("qntprat").value;
         const quaisPrateleiras = document.getElementById("quaisprat").value;
         const tipoProduto = document.getElementById("tipo").value;
         const quantidadeProduto = document.getElementById("quantprod").value;
         const data = document.getElementById("data").value;
 
-        // Validação simples
         if (
             quantidadePrateleiras === "" ||
             quaisPrateleiras === "" ||
@@ -24,7 +22,6 @@ document.addEventListener("DOMContentLoaded", function () {
             return;
         }
 
-        // Criando objeto com os dados
         const entrega = {
             quantidadePrateleiras: Number(quantidadePrateleiras),
             quaisPrateleiras: quaisPrateleiras,
@@ -33,11 +30,25 @@ document.addEventListener("DOMContentLoaded", function () {
             data: data
         };
 
-        console.log("Entrega cadastrada:", entrega);
+    
+        fetch("https://jsonplaceholder.typicode.com/posts", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(entrega)
+        })
+        .then(response => response.json())
+        .then(data => {
+            console.log("Resposta da API:", data);
+            alert(" Cadastro realizado com sucesso!");
+            form.reset();
+        })
+        .catch(error => {
+            console.error("Erro ao enviar dados:", error);
+            alert(" Erro ao cadastrar!");
+        });
 
-        alert("✅ Cadastro realizado com sucesso!");
-
-        form.reset(); // Limpa o formulário
     });
 
 });

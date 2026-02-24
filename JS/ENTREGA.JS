@@ -2,6 +2,7 @@ let prateleiraSelecionada = null;
 
 function selecionar(botao) {
     const botoes = document.querySelectorAll(".item button");
+
     botoes.forEach(btn => {
         if (!btn.disabled) {
             btn.style.backgroundColor = "#7bd389";
@@ -12,7 +13,7 @@ function selecionar(botao) {
     prateleiraSelecionada = botao.parentElement.querySelector("h4").innerText;
 }
 
-function concluirCadastro() {
+async function concluirCadastro() {
     const numero = document.getElementById("numeroEntrega").value;
     const tipo = document.getElementById("tipoProduto").value;
     const quantidade = document.getElementById("quantidade").value;
@@ -23,12 +24,37 @@ function concluirCadastro() {
         return;
     }
 
-    alert(
-        "Cadastro concluído!\n\n" +
-        "Entrega: " + numero +
-        "\nProduto: " + tipo +
-        "\nQuantidade: " + quantidade +
-        "\nData: " + data +
-        "\nPrateleira: " + prateleiraSelecionada
-    );
+    const entrega = {
+        numero,
+        tipo,
+        quantidade,
+        data,
+        prateleira: prateleiraSelecionada
+    };
+
+    try {
+        const response = await fetch("https://jsonplaceholder.typicode.com/posts", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(entrega)
+        });
+
+        const resultado = await response.json();
+
+        alert(
+            "Cadastro concluído!\n\n" +
+            "ID gerado: " + resultado.id +
+            "\nEntrega: " + numero +
+            "\nProduto: " + tipo +
+            "\nQuantidade: " + quantidade +
+            "\nData: " + data +
+            "\nPrateleira: " + prateleiraSelecionada
+        );
+
+    } catch (error) {
+        console.error(error);
+        alert("Erro ao cadastrar.");
+    }
 }
