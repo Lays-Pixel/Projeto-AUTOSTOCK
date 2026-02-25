@@ -52,3 +52,20 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 });
+
+fetch('https://jsonplaceholder.typicode.com/users', {
+method: 'POST',
+headers: {
+'Content-Type': 'application/json',
+},
+body: JSON.stringify({
+Ndaentregas: 'Ndeentrega',
+Tipodeprodutos: 'tipodeproduto',
+Quantdeentregas: 'quantdeproduto',
+Datadeentregas: 'data'
+
+
+
+}),
+}).then(response => response.json())
+.then(data => console.log(data))

@@ -96,3 +96,15 @@ buttons[2].addEventListener("click", () => {
 });
 
 window.onload = loadUsers;
+
+fetch(url)
+.then(response => {
+console.log("Status:", response.status); // 1o THEN: resposta bruta (Response)
+return response.json(); // converte para JSON
+})
+.then(data => {
+console.log("Dados:", data); // 2o THEN: resposta já convertida em objeto
+})
+.catch(error => {
+console.error("Erro:", error); // tratamento de erro
+});
