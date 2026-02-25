@@ -33,7 +33,7 @@ function validar() {
     const confsenha = formulario.confsenha.value;
     const Email = formulario.Email.value;
 
-
+console.log(teste);
     if (!validarusuario(usuario)) {
         exibirAlerta('warning', 'Usuario inválido', "Preencha o campo usuario!");
         return false
@@ -58,11 +58,7 @@ function validar() {
 }
 
 }
-
-
-exibirAlerta('success', 'Tudo Certo!', 'Cadastro realizado com sucesso!')
-
-
+exibirAlerta('success', 'Tudo Certo!', 'Cadastro realizado com sucesso!');
 
 function validarusuario(usuario) {
     return usuario.trim().length > 0;
@@ -86,7 +82,7 @@ function exibirAlerta(icone, titulo, texto) {
         text: texto,
     });
 }
-
+/*
 fetch('https://jsonplaceholder.typicode.com/users', {
 method: 'POST',
 headers: {
@@ -99,7 +95,7 @@ email: 'g@mail.com',
 senha: 'senha'
 }),
 }).then(response => response.json())
-.then(data => console.log(data))
+.then(data => console.log(data))*/
 
 
 
