@@ -58,3 +58,29 @@ async function concluirCadastro() {
         alert("Erro ao cadastrar.");
     }
 }
+
+fetch('https://jsonplaceholder.typicode.com/users', {
+method: 'POST',
+headers: {
+'Content-Type': 'application/json',
+},
+body: JSON.stringify({
+Ndaentrega: 'Ndaentrega',
+Tipodeproduto: 'tipodeproduto',
+Quantdeentregas: 'tipodeproduto',
+Datadaentrega: 'tipodeproduto'
+
+}),
+}).then(response => response.json())
+.then(data => console.log(data)) 
+
+fetch('https://jsonplaceholder.typicode.com/users/1', {
+method: 'PUT',
+headers: {
+'Content-Type': 'application/json',
+},
+body: JSON.stringify({
+btncadastro: 'btncadastro'
+}),
+}).then(response => response.json())
+.then(data => console.log(data))
