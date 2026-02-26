@@ -7,10 +7,10 @@ function login() {
         return;
     }
 
-    if (usuario === "admin" && senha === "1234") {
-        alert("Login realizado com sucesso!");
-    } else {
-        alert("Usuário ou senha incorretos!");
+    if (senha === "000000") {
+       ;
+    } if (senha === "222222"){
+        ;
     }
 }
 
