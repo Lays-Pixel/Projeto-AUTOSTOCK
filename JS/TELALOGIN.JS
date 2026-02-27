@@ -8,7 +8,7 @@ function login() {
     }
 
     if (senha === "000000") {
-       ;
+       getElementById(btnlogin)
     } if (senha === "222222"){
         ;
     }
