@@ -8,9 +8,11 @@ function login() {
     }
 
     if (senha === "000000") {
-       getElementById(btnlogin)
-    } if (senha === "222222"){
-        ;
+       document.getElementById("btnlogin").innerHTML=  onclick="window.location.href='telahome.html';";
+    } else if (senha === "222222"){
+        document.getElementById("btnlogin").innerHTML=  onclick="window.location.href='telahomefunc.html';";;
+    } else{
+        alert("Senha Inválida!")
     }
 }
 
