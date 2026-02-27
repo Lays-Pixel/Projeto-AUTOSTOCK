@@ -85,8 +85,8 @@ function exibirAlerta(icone, titulo, texto) {
         text: texto,
     });
 }
-/*
-fetch('https://jsonplaceholder.typicode.com/users', {
+
+fetch('', {
 method: 'POST',
 headers: {
 'Content-Type': 'application/json',
@@ -98,7 +98,7 @@ email: 'g@mail.com',
 senha: 'senha'
 }),
 }).then(response => response.json())
-.then(data => console.log(data))*/
+.then(data => console.log(data))
 
 
 

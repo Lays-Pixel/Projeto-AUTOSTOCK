@@ -74,7 +74,7 @@ Datadaentrega: 'tipodeproduto'
 }).then(response => response.json())
 .then(data => console.log(data)) 
 
-fetch('https://jsonplaceholder.typicode.com/users/1', {
+fetch('', {
 method: 'PUT',
 headers: {
 'Content-Type': 'application/json',

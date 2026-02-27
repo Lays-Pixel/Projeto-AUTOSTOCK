@@ -3,7 +3,7 @@ document.querySelector("form").addEventListener("submit", function(e) {
   alert("Produto cadastrado com sucesso!");
 });
  
-fetch('https://jsonplaceholder.typicode.com/users', {
+fetch('', {
 method: 'POST',
 headers: {
 'Content-Type': 'application/json',

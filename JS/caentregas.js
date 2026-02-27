@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 });
 
-fetch('https://jsonplaceholder.typicode.com/users', {
+fetch('', {
 method: 'POST',
 headers: {
 'Content-Type': 'application/json',
