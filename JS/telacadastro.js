@@ -58,7 +58,7 @@ console.log(teste);
 }
 
 }
-exibirAlerta('success', 'Tudo Certo!', 'Cadastro realizado com sucesso!');
+
 
 function validarusuario(usuario) {
     return usuario.trim().length > 0;
@@ -72,6 +72,9 @@ function validarEmail(Email) {
 }
 function validarsenha(senha) {
     return senha.length > 5;
+}
+{
+exibirAlerta('success', 'Tudo Certo!', 'Cadastro realizado com sucesso!');
 }
 
 
