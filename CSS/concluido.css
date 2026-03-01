@@ -4,7 +4,6 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;     
-    font-family: Arial, sans-serif;
     background-color: #ffffff;
     text-align: center;
 }
@@ -49,8 +48,12 @@ h2 {
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
-    background-color: rgb(6, 182, 0);
-    color: #000000;
-    color: #000000;
+    font-family:"Poppins", "serif";
+    background-color:#85e4c5;
+    border-radius: 5px;
+    border: 0;
 }
     
+.font{
+    font-family:"Poppins", "serif";
+}
