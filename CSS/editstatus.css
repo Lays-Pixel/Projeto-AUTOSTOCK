@@ -1,0 +1,33 @@
+.body{
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.container{
+  margin: 14px;
+  max-width: 600px;
+  width: 100%;
+}
+
+.header{
+   padding: 24px;
+   text-align: center;
+   
+}
+
+.form{
+    width: 70px;
+    text-align: center;
+    font-weight: bold;
+    height: 30px;
+    display: block;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 0;
+    background-color: #beecdd;
+    padding: 10px;
+}

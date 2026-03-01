@@ -7,7 +7,7 @@ deliverySection.appendChild(deliveryList);
 
 async function loadUsers() {
     try {
-        const response = await fetch("https://jsonplaceholder.typicode.com/users", {
+        const response = await fetch("", {
             method: "GET"
         });
 
@@ -28,7 +28,7 @@ async function loadUsers() {
 
 async function addUser(newUser) {
     try {
-        const response = await fetch("https://jsonplaceholder.typicode.com/users", {
+        const response = await fetch("", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -46,7 +46,7 @@ async function addUser(newUser) {
 
 async function updateUser(id, updatedUser) {
     try {
-        const response = await fetch(`https://jsonplaceholder.typicode.com/users/${id}`, {
+        const response = await fetch(``, {
             method: "PUT",
             headers: {
                 "Content-Type": "application/json"
@@ -64,7 +64,7 @@ async function updateUser(id, updatedUser) {
 
 async function deleteUser(id) {
     try {
-        await fetch(`https://jsonplaceholder.typicode.com/users/${id}`, {
+        await fetch(``, {
             method: "DELETE"
         });
 

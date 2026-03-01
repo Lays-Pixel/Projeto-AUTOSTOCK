@@ -6,7 +6,7 @@
 }
 
 body{
-  background-image: url(../img/img3fundo.png);
+  background-image: url("../img/img2fundo.png");
   width: 100%;
   min-height: 100vh;
   display: flex;
@@ -89,10 +89,4 @@ body{
     padding-right: 10px;
     color: #4a90e2;
     font-weight: bold;
-}
-
-.p{
-    color: rgb(4, 0, 255);
-    margin-top:5px ;
-    cursor: pointer;
 }

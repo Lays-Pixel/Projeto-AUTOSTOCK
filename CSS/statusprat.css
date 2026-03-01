@@ -1,9 +1,9 @@
 * {
   box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Poppins","serif";
 }
 
-body {
+body { 
   margin: 0;
   padding: 30px;
   background: #ffffff;
@@ -78,5 +78,6 @@ body {
   width: 50px;
   height: 30px;
   border-radius: 10%;
-  background-color: rgb(255, 255, 255);
+  border: 0;
+  background-color: #beecdd;
 }

@@ -7,5 +7,5 @@ body: JSON.stringify({
 name: 'Nathan Sebhastian',
 email: 'nathan@mail.com'
 }),
-}).then(response => response.json())
+}).then(response => response.json()) 
 .then(data => console.log(data))
