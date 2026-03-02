@@ -1,10 +1,12 @@
 function cadastrar() {
     const capacidade = document.getElementById("capacidade").value;
-    const data = document.getElementById("data").value;
+    const identificação = document.getElementById("identificação").value;
 
     if (capacidade === "" || data === "") {
         alert("Preencha todos os campos!");
         return;
+    } else{
+       window.location.href = "concluido.html";
     }
 
     alert(
@@ -17,7 +19,7 @@ function cadastrar() {
 fetch('', {
 method: 'POST',
 headers: {
-'Content-Type': 'application/json',
+'Content-Type': 'application/json',  
 },
 body: JSON.stringify({
 capdasprat: 'capacidade',
