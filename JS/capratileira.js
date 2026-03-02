@@ -1,19 +1,15 @@
 function cadastrar() {
     const capacidade = document.getElementById("capacidade").value;
     const identificação = document.getElementById("identificação").value;
+    const stts = document.getElementById("stts").value;
 
-    if (capacidade === "" || data === "") {
+
+    if (capacidade === "" || identificação === "" || stts === "") {
         alert("Preencha todos os campos!");
         return;
     } else{
        window.location.href = "concluido.html";
     }
-
-    alert(
-        "Cadastro realizado com sucesso!\n" +
-        "Capacidade: " + capacidade + " unidades\n" +
-        "Data: " + data
-    );
 }
 
 fetch('', {
@@ -23,7 +19,8 @@ headers: {
 },
 body: JSON.stringify({
 capdasprat: 'capacidade',
-datadecad: 'data'
+identificação: 'identificação',
+status: 'stts'
 }),
 }).then(response => response.json())
 .then(data => console.log(data))

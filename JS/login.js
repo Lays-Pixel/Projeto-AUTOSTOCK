@@ -31,7 +31,7 @@ function checkInputPassword() {
 
   if (passwordValue === "") {
     errorInput(password, "A senha é obrigatória.");
-  } else if (passwordValue.length < 7) {
+  } else if (passwordValue.length < 6) {
     errorInput(password, "A senha precisa ter no mínimo 6 caracteres.");
   } else {
     const formItem = password.parentElement;
@@ -73,3 +73,4 @@ function errorInput(input, message) {
   textMessage.innerText = message;
   formItem.className = "form-content error";
 }
+

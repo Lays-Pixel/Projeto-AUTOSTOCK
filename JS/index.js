@@ -51,8 +51,8 @@ function checkInputPassword(){
 
   if(passwordValue === ""){
     errorInput(password, "A senha é obrigatória.")
-  }else if(passwordValue.length < 7){
-    errorInput(password, "A senha precisa ter no mínimo 6 caracteres.")
+  }else if(passwordValue.length < 6){
+    errorInput(password, "A senha precisa ter no mínimo 7 caracteres.")
   }else{
     const formItem = password.parentElement;
     formItem.className = "form-content"
