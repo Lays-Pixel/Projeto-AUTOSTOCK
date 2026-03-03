@@ -43,3 +43,11 @@ body{
   position: relative;
 
 }
+
+.button{
+  background-color: #beecdd;
+  margin-left:100px;
+  margin-top: 15px;
+  border-radius: 5px;
+
+}
