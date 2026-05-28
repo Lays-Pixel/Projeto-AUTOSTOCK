@@ -1,7 +1,32 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\Anthony\\Projeto-AUTOSTOCK\\AutoStock\\",
-  "Documents": [],
+  "WorkspaceRootPath": "E:\\Lays.2\\Projeto - AutoStock\\Projeto-AUTOSTOCK\\AutoStock\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7C08D2FC-22DE-468D-A2E3-C6235A7AE80E}|AutoStock\\AutoStock.csproj|e:\\lays.2\\projeto - autostock\\projeto-autostock\\autostock\\autostock\\controllers\\entregascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C08D2FC-22DE-468D-A2E3-C6235A7AE80E}|AutoStock\\AutoStock.csproj|solutionrelative:autostock\\controllers\\entregascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C08D2FC-22DE-468D-A2E3-C6235A7AE80E}|AutoStock\\AutoStock.csproj|e:\\lays.2\\projeto - autostock\\projeto-autostock\\autostock\\autostock\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C08D2FC-22DE-468D-A2E3-C6235A7AE80E}|AutoStock\\AutoStock.csproj|solutionrelative:autostock\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C08D2FC-22DE-468D-A2E3-C6235A7AE80E}|AutoStock\\AutoStock.csproj|e:\\lays.2\\projeto - autostock\\projeto-autostock\\autostock\\autostock\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{7C08D2FC-22DE-468D-A2E3-C6235A7AE80E}|AutoStock\\AutoStock.csproj|solutionrelative:autostock\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C08D2FC-22DE-468D-A2E3-C6235A7AE80E}|AutoStock\\AutoStock.csproj|e:\\lays.2\\projeto - autostock\\projeto-autostock\\autostock\\autostock\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C08D2FC-22DE-468D-A2E3-C6235A7AE80E}|AutoStock\\AutoStock.csproj|solutionrelative:autostock\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C08D2FC-22DE-468D-A2E3-C6235A7AE80E}|AutoStock\\AutoStock.csproj|e:\\lays.2\\projeto - autostock\\projeto-autostock\\autostock\\autostock\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C08D2FC-22DE-468D-A2E3-C6235A7AE80E}|AutoStock\\AutoStock.csproj|solutionrelative:autostock\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C08D2FC-22DE-468D-A2E3-C6235A7AE80E}|AutoStock\\AutoStock.csproj|e:\\lays.2\\projeto - autostock\\projeto-autostock\\autostock\\autostock\\controllers\\produtoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C08D2FC-22DE-468D-A2E3-C6235A7AE80E}|AutoStock\\AutoStock.csproj|solutionrelative:autostock\\controllers\\produtoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +34,89 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EntregasController.cs",
+              "DocumentMoniker": "E:\\Lays.2\\Projeto - AutoStock\\Projeto-AUTOSTOCK\\AutoStock\\AutoStock\\Controllers\\EntregasController.cs",
+              "RelativeDocumentMoniker": "AutoStock\\Controllers\\EntregasController.cs",
+              "ToolTip": "E:\\Lays.2\\Projeto - AutoStock\\Projeto-AUTOSTOCK\\AutoStock\\AutoStock\\Controllers\\EntregasController.cs",
+              "RelativeToolTip": "AutoStock\\Controllers\\EntregasController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-28T13:34:41.653Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ProdutosController.cs",
+              "DocumentMoniker": "E:\\Lays.2\\Projeto - AutoStock\\Projeto-AUTOSTOCK\\AutoStock\\AutoStock\\Controllers\\ProdutosController.cs",
+              "RelativeDocumentMoniker": "AutoStock\\Controllers\\ProdutosController.cs",
+              "ToolTip": "E:\\Lays.2\\Projeto - AutoStock\\Projeto-AUTOSTOCK\\AutoStock\\AutoStock\\Controllers\\ProdutosController.cs",
+              "RelativeToolTip": "AutoStock\\Controllers\\ProdutosController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-28T13:32:40.051Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UsuarioController.cs",
+              "DocumentMoniker": "E:\\Lays.2\\Projeto - AutoStock\\Projeto-AUTOSTOCK\\AutoStock\\AutoStock\\Controllers\\UsuarioController.cs",
+              "RelativeDocumentMoniker": "AutoStock\\Controllers\\UsuarioController.cs",
+              "ToolTip": "E:\\Lays.2\\Projeto - AutoStock\\Projeto-AUTOSTOCK\\AutoStock\\AutoStock\\Controllers\\UsuarioController.cs",
+              "RelativeToolTip": "AutoStock\\Controllers\\UsuarioController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-28T13:31:11.598Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "E:\\Lays.2\\Projeto - AutoStock\\Projeto-AUTOSTOCK\\AutoStock\\AutoStock\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "AutoStock\\Data\\AppDbContext.cs",
+              "ToolTip": "E:\\Lays.2\\Projeto - AutoStock\\Projeto-AUTOSTOCK\\AutoStock\\AutoStock\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "AutoStock\\Data\\AppDbContext.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-28T13:28:07.81Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "E:\\Lays.2\\Projeto - AutoStock\\Projeto-AUTOSTOCK\\AutoStock\\AutoStock\\appsettings.json",
+              "RelativeDocumentMoniker": "AutoStock\\appsettings.json",
+              "ToolTip": "E:\\Lays.2\\Projeto - AutoStock\\Projeto-AUTOSTOCK\\AutoStock\\AutoStock\\appsettings.json",
+              "RelativeToolTip": "AutoStock\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-05-28T13:24:01.541Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\Lays.2\\Projeto - AutoStock\\Projeto-AUTOSTOCK\\AutoStock\\AutoStock\\Program.cs",
+              "RelativeDocumentMoniker": "AutoStock\\Program.cs",
+              "ToolTip": "E:\\Lays.2\\Projeto - AutoStock\\Projeto-AUTOSTOCK\\AutoStock\\AutoStock\\Program.cs",
+              "RelativeToolTip": "AutoStock\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-28T13:16:30.131Z",
+              "EditorCaption": ""
             }
           ]
         }

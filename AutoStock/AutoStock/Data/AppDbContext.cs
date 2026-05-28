@@ -1,7 +1,5 @@
-﻿using AutoStock.Models;
+﻿using Microsoft.EntityFrameworkCore;
 using AutoStock.Models;
-using Microsoft.EntityFrameworkCore;
-
 namespace AutoStock.Data;
 
 public class AppDbContext : DbContext
