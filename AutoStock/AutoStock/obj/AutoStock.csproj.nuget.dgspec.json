@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< Updated upstream
     "E:\\Lays.2\\Projeto - AutoStock\\Projeto-AUTOSTOCK\\AutoStock\\AutoStock\\AutoStock.csproj": {}
   },
   "projects": {
@@ -12,6 +13,19 @@
         "projectPath": "E:\\Lays.2\\Projeto - AutoStock\\Projeto-AUTOSTOCK\\AutoStock\\AutoStock\\AutoStock.csproj",
         "packagesPath": "C:\\Users\\Manha.ceticc\\.nuget\\packages\\",
         "outputPath": "E:\\Lays.2\\Projeto - AutoStock\\Projeto-AUTOSTOCK\\AutoStock\\AutoStock\\obj\\",
+=======
+    "C:\\Users\\manha.ceticc\\Documents\\GitHub\\Projeto-AUTOSTOCK\\AutoStock\\AutoStock\\AutoStock.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\manha.ceticc\\Documents\\GitHub\\Projeto-AUTOSTOCK\\AutoStock\\AutoStock\\AutoStock.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\manha.ceticc\\Documents\\GitHub\\Projeto-AUTOSTOCK\\AutoStock\\AutoStock\\AutoStock.csproj",
+        "projectName": "AutoStock",
+        "projectPath": "C:\\Users\\manha.ceticc\\Documents\\GitHub\\Projeto-AUTOSTOCK\\AutoStock\\AutoStock\\AutoStock.csproj",
+        "packagesPath": "C:\\Users\\manha.ceticc\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\manha.ceticc\\Documents\\GitHub\\Projeto-AUTOSTOCK\\AutoStock\\AutoStock\\obj\\",
+>>>>>>> Stashed changes
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -59,8 +73,11 @@
               "version": "[8.0.24, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
+<<<<<<< Updated upstream
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
+=======
+>>>>>>> Stashed changes
               "target": "Package",
               "version": "[8.0.24, )"
             },
