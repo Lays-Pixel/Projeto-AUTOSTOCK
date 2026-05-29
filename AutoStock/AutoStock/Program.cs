@@ -34,10 +34,6 @@ builder.Services.AddCors(options =>
     });
 });
 
-<<<<<<< Updated upstream
-
-=======
->>>>>>> Stashed changes
 var app = builder.Build();
 
 if (app.Environment.IsDevelopment())

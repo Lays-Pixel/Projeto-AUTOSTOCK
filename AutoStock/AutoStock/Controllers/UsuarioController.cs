@@ -1,26 +1,13 @@
-<<<<<<< Updated upstream
+
 ﻿using AutoStock.Data;
 using AutoStock.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-    public class   UsuarioController
-    {
-        public int Id { get; set; }
-        public string Nome { get; set; }
-        public string Email { get; set; }
-        public int Senha { get; set; }
-        public string Tipo { get; set; }
-=======
-﻿using AutoStock.Models;
-using Azure;
-using Microsoft.AspNetCore.Mvc;
 
 
-namespace WebApplication1.Controllers
+namespace AutoStock.Controllers
 {
-    public class UsuarioController
-    {
-
+    
         [ApiController]
         [Route("[controller]")]
 
@@ -38,7 +25,7 @@ namespace WebApplication1.Controllers
             [HttpPost("Login")]
             public IActionResult LoginUsuario(Usuario usuario)
             {
-                var UsuariosDoBanco = _context.Usuarios.Where(c => c.Email.Equals(usuario.Email) && c.Senha.Equals(usuario.Senha)).ToList();
+                var UsuariosDoBanco = _context.Usuario.Where(c => c.Email.Equals(usuario.Email) && c.Senha.Equals(usuario.Senha)).ToList();
                 if (UsuariosDoBanco.Count == 0)
                 {
                     return NotFound("Login ou Senha incorretas");
@@ -67,7 +54,7 @@ namespace WebApplication1.Controllers
             [HttpPut("{id}")]
             public IActionResult AtualizaCliente(int id, Usuario usuario)
             {
-                var UsuariosDoBanco = _context.Usuarios.Find(id);
+                var UsuariosDoBanco = _context.Usuario.Find(id);
                 if (UsuariosDoBanco == null)
                 {
                     return NotFound("Cliente não existe no banco!");
@@ -75,6 +62,7 @@ namespace WebApplication1.Controllers
                 UsuariosDoBanco.Nome = usuario.Nome;
                 UsuariosDoBanco.Email = usuario.Email;
                 UsuariosDoBanco.Senha = usuario.Senha;
+                UsuariosDoBanco.Tipo = usuario.Tipo;
                 _context.SaveChanges();
                 return Ok("Atualizado");
             }
@@ -92,7 +80,7 @@ namespace WebApplication1.Controllers
             [HttpDelete("{id}")]
             public IActionResult DeletaCliente(int id)
             {
-                var UsuariosDoBanco = _context.Usuarios.Find(id);
+                var UsuariosDoBanco = _context.Usuario.Find(id);
                 if (UsuariosDoBanco == null)
                 {
                     return NotFound("Não encontrado!");
@@ -102,6 +90,6 @@ namespace WebApplication1.Controllers
                 return Ok("Deletado");
             }
         }
->>>>>>> Stashed changes
     }
+
 

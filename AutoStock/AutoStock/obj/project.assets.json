@@ -50,11 +50,7 @@
       "Humanizer.Core/2.14.1": {
         "type": "package",
         "compile": {
-<<<<<<< Updated upstream
           "lib/net6.0/_._": {
-=======
-          "lib/net6.0/Humanizer.dll": {
->>>>>>> Stashed changes
             "related": ".xml"
           }
         },
@@ -93,11 +89,7 @@
           "System.Text.Encoding.CodePages": "6.0.0"
         },
         "compile": {
-<<<<<<< Updated upstream
           "lib/netcoreapp3.1/_._": {
-=======
-          "lib/netcoreapp3.1/Microsoft.CodeAnalysis.dll": {
->>>>>>> Stashed changes
             "related": ".pdb;.xml"
           }
         },
@@ -154,11 +146,7 @@
           "Microsoft.CodeAnalysis.Common": "[4.5.0]"
         },
         "compile": {
-<<<<<<< Updated upstream
           "lib/netcoreapp3.1/_._": {
-=======
-          "lib/netcoreapp3.1/Microsoft.CodeAnalysis.CSharp.dll": {
->>>>>>> Stashed changes
             "related": ".pdb;.xml"
           }
         },
@@ -218,11 +206,7 @@
           "Microsoft.CodeAnalysis.Workspaces.Common": "[4.5.0]"
         },
         "compile": {
-<<<<<<< Updated upstream
           "lib/netcoreapp3.1/_._": {
-=======
-          "lib/netcoreapp3.1/Microsoft.CodeAnalysis.CSharp.Workspaces.dll": {
->>>>>>> Stashed changes
             "related": ".pdb;.xml"
           }
         },
@@ -284,11 +268,7 @@
           "System.Threading.Channels": "6.0.0"
         },
         "compile": {
-<<<<<<< Updated upstream
           "lib/netcoreapp3.1/_._": {
-=======
-          "lib/netcoreapp3.1/Microsoft.CodeAnalysis.Workspaces.dll": {
->>>>>>> Stashed changes
             "related": ".pdb;.xml"
           }
         },
@@ -461,11 +441,7 @@
           "Mono.TextTemplating": "2.2.1"
         },
         "compile": {
-<<<<<<< Updated upstream
           "lib/net8.0/_._": {
-=======
-          "lib/net8.0/Microsoft.EntityFrameworkCore.Design.dll": {
->>>>>>> Stashed changes
             "related": ".xml"
           }
         },
@@ -635,11 +611,7 @@
       "Microsoft.Extensions.DependencyModel/8.0.2": {
         "type": "package",
         "compile": {
-<<<<<<< Updated upstream
           "lib/net8.0/_._": {
-=======
-          "lib/net8.0/Microsoft.Extensions.DependencyModel.dll": {
->>>>>>> Stashed changes
             "related": ".xml"
           }
         },
@@ -934,11 +906,7 @@
           "System.CodeDom": "4.4.0"
         },
         "compile": {
-<<<<<<< Updated upstream
           "lib/netstandard2.0/_._": {}
-=======
-          "lib/netstandard2.0/Mono.TextTemplating.dll": {}
->>>>>>> Stashed changes
         },
         "runtime": {
           "lib/netstandard2.0/Mono.TextTemplating.dll": {}
@@ -1027,11 +995,7 @@
       "System.CodeDom/4.4.0": {
         "type": "package",
         "compile": {
-<<<<<<< Updated upstream
           "ref/netstandard2.0/_._": {
-=======
-          "ref/netstandard2.0/System.CodeDom.dll": {
->>>>>>> Stashed changes
             "related": ".xml"
           }
         },
@@ -1045,11 +1009,7 @@
           "System.Runtime.CompilerServices.Unsafe": "6.0.0"
         },
         "compile": {
-<<<<<<< Updated upstream
           "lib/net6.0/_._": {
-=======
-          "lib/net6.0/System.Collections.Immutable.dll": {
->>>>>>> Stashed changes
             "related": ".xml"
           }
         },
@@ -1078,11 +1038,7 @@
       "System.Composition.AttributedModel/6.0.0": {
         "type": "package",
         "compile": {
-<<<<<<< Updated upstream
           "lib/net6.0/_._": {
-=======
-          "lib/net6.0/System.Composition.AttributedModel.dll": {
->>>>>>> Stashed changes
             "related": ".xml"
           }
         },
@@ -1101,11 +1057,7 @@
           "System.Composition.AttributedModel": "6.0.0"
         },
         "compile": {
-<<<<<<< Updated upstream
           "lib/net6.0/_._": {
-=======
-          "lib/net6.0/System.Composition.Convention.dll": {
->>>>>>> Stashed changes
             "related": ".xml"
           }
         },
@@ -1124,11 +1076,7 @@
           "System.Composition.Runtime": "6.0.0"
         },
         "compile": {
-<<<<<<< Updated upstream
           "lib/net6.0/_._": {
-=======
-          "lib/net6.0/System.Composition.Hosting.dll": {
->>>>>>> Stashed changes
             "related": ".xml"
           }
         },
@@ -1144,11 +1092,7 @@
       "System.Composition.Runtime/6.0.0": {
         "type": "package",
         "compile": {
-<<<<<<< Updated upstream
           "lib/net6.0/_._": {
-=======
-          "lib/net6.0/System.Composition.Runtime.dll": {
->>>>>>> Stashed changes
             "related": ".xml"
           }
         },
@@ -1169,11 +1113,7 @@
           "System.Composition.Runtime": "6.0.0"
         },
         "compile": {
-<<<<<<< Updated upstream
           "lib/net6.0/_._": {
-=======
-          "lib/net6.0/System.Composition.TypedParts.dll": {
->>>>>>> Stashed changes
             "related": ".xml"
           }
         },
@@ -1290,11 +1230,7 @@
       "System.IO.Pipelines/6.0.3": {
         "type": "package",
         "compile": {
-<<<<<<< Updated upstream
           "lib/net6.0/_._": {
-=======
-          "lib/net6.0/System.IO.Pipelines.dll": {
->>>>>>> Stashed changes
             "related": ".xml"
           }
         },
@@ -1348,11 +1284,7 @@
           "System.Collections.Immutable": "6.0.0"
         },
         "compile": {
-<<<<<<< Updated upstream
           "lib/net6.0/_._": {
-=======
-          "lib/net6.0/System.Reflection.Metadata.dll": {
->>>>>>> Stashed changes
             "related": ".xml"
           }
         },
@@ -1546,11 +1478,7 @@
           "System.Runtime.CompilerServices.Unsafe": "6.0.0"
         },
         "compile": {
-<<<<<<< Updated upstream
           "lib/net6.0/_._": {
-=======
-          "lib/net6.0/System.Text.Encoding.CodePages.dll": {
->>>>>>> Stashed changes
             "related": ".xml"
           }
         },
@@ -1607,11 +1535,7 @@
       "System.Threading.Channels/6.0.0": {
         "type": "package",
         "compile": {
-<<<<<<< Updated upstream
           "lib/net6.0/_._": {
-=======
-          "lib/net6.0/System.Threading.Channels.dll": {
->>>>>>> Stashed changes
             "related": ".xml"
           }
         },
@@ -4521,19 +4445,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< Updated upstream
       "projectUniqueName": "E:\\Lays.2\\Projeto - AutoStock\\Projeto-AUTOSTOCK\\AutoStock\\AutoStock\\AutoStock.csproj",
       "projectName": "AutoStock",
       "projectPath": "E:\\Lays.2\\Projeto - AutoStock\\Projeto-AUTOSTOCK\\AutoStock\\AutoStock\\AutoStock.csproj",
       "packagesPath": "C:\\Users\\Manha.ceticc\\.nuget\\packages\\",
       "outputPath": "E:\\Lays.2\\Projeto - AutoStock\\Projeto-AUTOSTOCK\\AutoStock\\AutoStock\\obj\\",
-=======
-      "projectUniqueName": "C:\\Users\\manha.ceticc\\Documents\\GitHub\\Projeto-AUTOSTOCK\\AutoStock\\AutoStock\\AutoStock.csproj",
-      "projectName": "AutoStock",
-      "projectPath": "C:\\Users\\manha.ceticc\\Documents\\GitHub\\Projeto-AUTOSTOCK\\AutoStock\\AutoStock\\AutoStock.csproj",
-      "packagesPath": "C:\\Users\\manha.ceticc\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\manha.ceticc\\Documents\\GitHub\\Projeto-AUTOSTOCK\\AutoStock\\AutoStock\\obj\\",
->>>>>>> Stashed changes
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

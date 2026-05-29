@@ -6,7 +6,9 @@ public class Produto
 
     public string Nome { get; set; }
 
-    public int QntEstoque { get; set; }
+    public int Qnt_estoque { get; set; }
 
-    public string TipoProduto { get; set; }
+    public string Tipo_Produto { get; set; }
+
+    public int IdUsuario { get; set; }
 }
