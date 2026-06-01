@@ -3,26 +3,26 @@ using AutoStock.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
- 
 
-    namespace AutoStock.Controllers
-    {
+
+namespace AutoStock.Controllers
+{
 
     [ApiController]
     [Route("[controller]")]
-    public class ProdutosController : ControllerBase
+    public class PrateleiraController : ControllerBase
     {
 
         private readonly AppDbContext _context;
 
-        public ProdutosController(AppDbContext context)
+        public PrateleiraController(AppDbContext context)
         {
             _context = context;
         }
 
 
         [HttpPost]
-        public IActionResult CadastraProduto(Produto produto)
+        public IActionResult CadastraPrateleira(Prateleira prateleira)
         {
 
             var sessaoUsuario = HttpContext.Session.GetString("IdLogado");
@@ -33,13 +33,13 @@ using Microsoft.EntityFrameworkCore;
             var idLogado = Request.Cookies["IdLogado"];
             if (idLogado != null)
 
-            _context.Add(produto);
+                _context.Add(prateleira);
             _context.SaveChanges();
-            return Created("", produto);
+            return Created("", prateleira);
         }
 
         [HttpPut("{id}")]
-        public IActionResult AtualizaProduto(int id, Produto produto)
+        public IActionResult AtualizaProduto(int id, Prateleira prateleira)
         {
             var sessaoUsuario = HttpContext.Session.GetString("IdLogado");
             if (sessaoUsuario == null)
@@ -47,15 +47,14 @@ using Microsoft.EntityFrameworkCore;
                 return Unauthorized("Faça login Antes");
             }
 
-            var produtoDoBanco = _context.Produto.Find(id);
-            if (produtoDoBanco == null)
+            var prateleiraDoBanco = _context.Prateleira.Find(id);
+            if (prateleiraDoBanco == null)
             {
-                return NotFound("Produto não existe no banco!");
+                return NotFound("Esta prateleira não existe no banco!");
             }
-            produtoDoBanco.Qnt_estoque = produto.Qnt_estoque;
-            produtoDoBanco.Nome = produto.Nome;
-            produtoDoBanco.Tipo_Produto = produto.Tipo_Produto;
-            
+            prateleiraDoBanco.Status = prateleira.Status;
+            prateleiraDoBanco.Capacidade = prateleira.Capacidade;
+
 
             _context.SaveChanges();
             return Ok("Atualizado");

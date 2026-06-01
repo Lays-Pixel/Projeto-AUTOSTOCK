@@ -10,5 +10,4 @@ public class Produto
 
     public string Tipo_Produto { get; set; }
 
-    public int IdUsuario { get; set; }
 }

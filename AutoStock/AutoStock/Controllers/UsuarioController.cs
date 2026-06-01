@@ -1,4 +1,3 @@
-
 ﻿using AutoStock.Data;
 using AutoStock.Models;
 using Microsoft.AspNetCore.Mvc;
@@ -52,12 +51,12 @@ namespace AutoStock.Controllers
             }
 
             [HttpPut("{id}")]
-            public IActionResult AtualizaCliente(int id, Usuario usuario)
+            public IActionResult AtualizaUsuario(int id, Usuario usuario)
             {
                 var UsuariosDoBanco = _context.Usuario.Find(id);
                 if (UsuariosDoBanco == null)
                 {
-                    return NotFound("Cliente não existe no banco!");
+                    return NotFound("Este Usuário não existe no banco!");
                 }
                 UsuariosDoBanco.Nome = usuario.Nome;
                 UsuariosDoBanco.Email = usuario.Email;
@@ -72,13 +71,12 @@ namespace AutoStock.Controllers
             {
                 HttpContext.Session.Clear();
                 Response.Cookies.Delete("Idlogado");
-                Response.Cookies.Delete(" .aspNetCore.Session");
                 return Ok("Deslogado");
             }
 
 
             [HttpDelete("{id}")]
-            public IActionResult DeletaCliente(int id)
+            public IActionResult DeletaUsuario(int id)
             {
                 var UsuariosDoBanco = _context.Usuario.Find(id);
                 if (UsuariosDoBanco == null)

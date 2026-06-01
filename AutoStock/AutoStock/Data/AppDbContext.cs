@@ -14,7 +14,7 @@ namespace AutoStock.Data
 
         public DbSet<Produto> Produto { get; set; }
 
-        public DbSet<Prateleira> Prateleiras { get; set; }
+        public DbSet<Prateleira> Prateleira { get; set; }
 
         public DbSet<Entrega> Entregas { get; set; }
 
