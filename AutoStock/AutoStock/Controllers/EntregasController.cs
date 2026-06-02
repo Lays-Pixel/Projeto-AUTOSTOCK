@@ -49,7 +49,7 @@ namespace AutoStock.Controllers
             {
                 return NotFound(" Esta Entrega não existe no banco!");
             }
-            entregaDoBanco.DataRecebimento = entrega.DataRecebimento;
+            entregaDoBanco.Data_Recebimento = entrega.Data_Recebimento;
             entregaDoBanco.FkUsuarioIdResponsavel = entrega.FkUsuarioIdResponsavel;
             entregaDoBanco.FkUsuarioIdReceptor = entrega.FkUsuarioIdReceptor;
 

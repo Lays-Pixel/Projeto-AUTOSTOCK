@@ -79,5 +79,4 @@ namespace AutoStock.Controllers
             return Ok("Deletado");
         }
     }
-
 }
