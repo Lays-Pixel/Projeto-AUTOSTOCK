@@ -20,7 +20,6 @@ using Microsoft.EntityFrameworkCore;
             _context = context;
         }
 
-
         [HttpPost]
         public IActionResult CadastraProduto(Produto produto)
         {
@@ -37,6 +36,25 @@ using Microsoft.EntityFrameworkCore;
             _context.SaveChanges();
             return Created("", produto);
         }
+
+        [HttpPost("{idPrateleira}")]
+        public IActionResult ProdutonaPrateleira(Prateleira produto)
+        {
+
+            var sessaoUsuario = HttpContext.Session.GetString("IdLogado");
+            if (sessaoUsuario == null)
+            {
+                return Unauthorized("Faça login Antes");
+            }
+            var idLogado = Request.Cookies["IdLogado"];
+            if (idLogado != null)
+
+             _context.Add(produto);
+            
+            _context.SaveChanges();
+            return Created("", produto);
+        }
+
 
         [HttpPut("{id}")]
         public IActionResult AtualizaProduto(int id, Produto produto)

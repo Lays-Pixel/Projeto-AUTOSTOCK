@@ -69,12 +69,12 @@ namespace AutoStock.Controllers
                 return Unauthorized("Faça login Antes");
             }
 
-            var produtoDoBanco = _context.Produto.Find(id);
-            if (produtoDoBanco == null)
+            var prateleiraDoBanco = _context.Prateleira.Find(id);
+            if (prateleiraDoBanco == null)
             {
                 return NotFound("Não encontrado!");
             }
-            _context.Remove(produtoDoBanco);
+            _context.Remove(prateleiraDoBanco);
             _context.SaveChanges();
             return Ok("Deletado");
         }
