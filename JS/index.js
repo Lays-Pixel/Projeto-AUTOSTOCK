@@ -88,3 +88,69 @@ function errorInput(input, message){
   formItem.className = "form-content error"
 
 }
+
+const myForm = document.getElementById('form');
+if (myForm!=null){
+myForm.addEventListener('submit', function (event) {
+    // 1. Prevenir o recarregamento da página ao submeter form
+    event.preventDefault();
+
+    fetch('https://localhost:7142/usuario', {
+        method: 'POST', //Para outros métodos, basta alterar aqui. Obs: Delete remove a parte do body e headers, e no get é conforme todos os exemploes feitos na Unidade interação com API 
+        credentials: 'include',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+            nome: document.getElementById("nome").value,
+            email: document.getElementById("email").value,
+            senha: document.getElementById("senha").value,
+            sexo: document.getElementById("tipo").value
+        }),
+    }).then(response => response.json())
+        .then(data => {
+            alert("Conta cadastrada com suceeso");
+            window.location.href = "login.html";      
+        })
+});
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
