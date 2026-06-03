@@ -37,7 +37,7 @@ using Microsoft.EntityFrameworkCore;
             return Created("", produto);
         }
 
-        [HttpPost("{idPrateleira}")]
+        [HttpPost]
         public IActionResult ProdutonaPrateleira(Prateleira produto)
         {
 
@@ -48,11 +48,10 @@ using Microsoft.EntityFrameworkCore;
             }
             var idLogado = Request.Cookies["IdLogado"];
             if (idLogado != null)
+            {
 
-             _context.Add(produto);
-            
-            _context.SaveChanges();
-            return Created("", produto);
+            }
+             
         }
 
 
