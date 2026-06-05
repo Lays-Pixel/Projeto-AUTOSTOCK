@@ -1,6 +1,7 @@
 const form = document.getElementById("form");
 const username = document.getElementById("username");
 const password = document.getElementById("password");
+const email = document.getElementById("email");
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();
@@ -35,6 +36,17 @@ function checkInputPassword() {
     errorInput(password, "A senha precisa ter no mínimo 6 caracteres.");
   } else {
     const formItem = password.parentElement;
+    formItem.className = "form-content";
+  }
+}
+
+function checkInputEmail() {
+  const emailValue = email.value;
+
+  if (emailValue === "") {
+    errorInput(email, "Preencha com o seu Email!");
+  } else {
+    const formItem = email.parentElement;
     formItem.className = "form-content";
   }
 }

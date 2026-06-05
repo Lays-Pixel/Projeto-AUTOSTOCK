@@ -45,7 +45,6 @@ function checkInputEmail(){
 
 }
 
-
 function checkInputPassword(){
   const passwordValue = password.value;
 
@@ -57,7 +56,6 @@ function checkInputPassword(){
     const formItem = password.parentElement;
     formItem.className = "form-content"
   }
-
 
 }
 
@@ -77,7 +75,6 @@ function checkForm(){
   }
 
 }
-
 
 function errorInput(input, message){
   const formItem = input.parentElement;
@@ -109,7 +106,7 @@ myForm.addEventListener('submit', function (event) {
         }),
     }).then(response => response.json())
         .then(data => {
-            alert("Conta cadastrada com suceeso");
+            alert("Conta cadastrada com sucesso");
             window.location.href = "login.html";      
         })
 });
