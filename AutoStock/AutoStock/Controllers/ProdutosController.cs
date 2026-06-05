@@ -37,23 +37,6 @@ using Microsoft.EntityFrameworkCore;
             return Created("", produto);
         }
 
-        [HttpPost]
-        public IActionResult ProdutonaPrateleira(Prateleira produto)
-        {
-
-            var sessaoUsuario = HttpContext.Session.GetString("IdLogado");
-            if (sessaoUsuario == null)
-            {
-                return Unauthorized("Faça login Antes");
-            }
-            var idLogado = Request.Cookies["IdLogado"];
-            if (idLogado != null)
-            {
-
-            }
-             
-        }
-
 
         [HttpPut("{id}")]
         public IActionResult AtualizaProduto(int id, Produto produto)
