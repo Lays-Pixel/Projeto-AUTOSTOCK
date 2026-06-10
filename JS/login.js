@@ -65,7 +65,6 @@ function checkForm() {
     login();
   }
 }
-
 function login() {
   const senha = password.value;
 
@@ -77,7 +76,6 @@ function login() {
     alert("Senha incorreta!");
   }
 }
-
 function errorInput(input, message) {
   const formItem = input.parentElement;
   const textMessage = formItem.querySelector("a");
@@ -93,7 +91,7 @@ myFormLogin.addEventListener('submit', function (event) {
     event.preventDefault();
 
     fetch('https://localhost:7142/usuario/login', {
-        method: 'POST', //Para outros métodos, basta alterar aqui. Obs: Delete remove a parte do body e headers, e no get é conforme todos os exemploes feitos na Unidade interação com API 
+        method: 'POST', //Para outros métodos, basta alterar aqui. Obs: Delete remove a parte do body e headers, e no get é conforme todos os exemplos feitos na Unidade interação com API 
         credentials: 'include',
         headers: {
             'Content-Type': 'application/json',

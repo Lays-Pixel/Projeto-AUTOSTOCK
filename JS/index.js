@@ -1,4 +1,4 @@
-const form = document.getElementById("form");
+//const form = document.getElementById("form");
 const username = document.getElementById("username")
 const email = document.getElementById("email")
 const password = document.getElementById("password")
@@ -51,7 +51,7 @@ function checkInputPassword(){
   if(passwordValue === ""){
     errorInput(password, "A senha é obrigatória.")
   }else if(passwordValue.length < 6){
-    errorInput(password, "A senha precisa ter no mínimo 7 caracteres.")
+    errorInput(password, "A senha precisa ter no mínimo 6 caracteres.")
   }else{
     const formItem = password.parentElement;
     formItem.className = "form-content"
@@ -99,12 +99,16 @@ myForm.addEventListener('submit', function (event) {
             'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-            nome: document.getElementById("nome").value,
+            nome: document.getElementById("username").value,
             email: document.getElementById("email").value,
-            senha: document.getElementById("senha").value,
-            sexo: document.getElementById("tipo").value
+            senha: document.getElementById("password").value,
+            tipo: document.getElementById("tipo").value
         }),
-    }).then(response => response.json())
+    }).then(response => { 
+      console.log(response);
+      response.json();
+
+    })
         .then(data => {
             alert("Conta cadastrada com sucesso");
             window.location.href = "login.html";      
