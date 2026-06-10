@@ -20,6 +20,8 @@ namespace AutoStock.Data
 
         public DbSet<Pedido> Pedidos { get; set; }
 
+        public DbSet<ProdutonaPrateleira> produtonaPrateleira { get; set; }
+
 
     }
 }

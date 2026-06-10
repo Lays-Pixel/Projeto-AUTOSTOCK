@@ -32,11 +32,27 @@ using Microsoft.EntityFrameworkCore;
             var idLogado = Request.Cookies["IdLogado"];
             if (idLogado != null)
 
-            _context.Add(produto);
+                _context.Add(produto);
             _context.SaveChanges();
             return Created("", produto);
         }
 
+        [HttpPost("{idPrateleira}")]
+        public IActionResult CadastraProdutonaPrateleira(ProdutonaPrateleira produtonaPrateleira)
+        {
+
+            var sessaoUsuario = HttpContext.Session.GetString("IdLogado");
+            if (sessaoUsuario == null)
+            {
+                return Unauthorized("Faça login Antes");
+            }
+            var idLogado = Request.Cookies["IdLogado"];
+            if (idLogado != null)
+
+                _context.Add(produtonaPrateleira);
+               _context.SaveChanges();
+               return Created("", produtonaPrateleira);
+        }
 
         [HttpPut("{id}")]
         public IActionResult AtualizaProduto(int id, Produto produto)
