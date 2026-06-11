@@ -7,7 +7,7 @@ myForm1.addEventListener('submit', function (event) {
     // 1. Prevenir o recarregamento da página ao submeter form
     event.preventDefault();
 
-    fetch('https://localhost:7142/produtos', {
+    fetch('https://localhost:7142/Produtos', {
         method: 'POST', //Para outros métodos, basta alterar aqui. Obs: Delete remove a parte do body e headers, e no get é conforme todos os exemploes feitos na Unidade interação com API 
         credentials: 'include',
         headers: {
@@ -21,18 +21,17 @@ myForm1.addEventListener('submit', function (event) {
     }).then(response => {
         console.log(response);
         if (response.status ==401){
-            alert ("Faça login antes de cadastrar!");
+            alert ("Faça login antes de cadastrar!"); 
             window.location.href="login.html";
         }
         response.json();})
         .then(data => {
-            console.log(data);
-            document.getElementById("respostaTarefa").innerHTML ="<h4>Produto cadastrado com sucesso!</h4>";        
+            console.log(data);        
         })
 });
 }
     function deletaProduto(idProduto){
-        fetch('https://localhost:7142/produtos'+idProduto, {
+        fetch('https://localhost:7142/Produtos'+idProduto, {
             method: 'DELETE', 
             credentials: 'include'
   
@@ -43,7 +42,7 @@ myForm1.addEventListener('submit', function (event) {
     }
 
     function editaProduto (idProduto){
-        fetch('https://localhost:7142/produtos'+idProduto, {
+        fetch('https://localhost:7142/Produtos'+idProduto, {
             method: 'PUT',   
             credentials: 'include',
             headers: {

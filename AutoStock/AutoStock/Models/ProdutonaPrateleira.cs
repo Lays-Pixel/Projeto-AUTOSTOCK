@@ -6,5 +6,7 @@
 
         public int FkPrateleiraId { get; set; }
 
+        public int Id { get; set; }
+
     }
 }

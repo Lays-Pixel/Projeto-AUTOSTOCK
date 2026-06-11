@@ -38,7 +38,7 @@ namespace AutoStock.Controllers
                         HttpOnly = true,
                         SameSite = SameSiteMode.None,
                     });
-                return Ok("Login realizado com sucesso");
+                return Ok(UsuariosDoBanco[0]);
             }
 
 
