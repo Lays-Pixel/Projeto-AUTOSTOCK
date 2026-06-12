@@ -4,7 +4,7 @@ myFormLogin.addEventListener('submit', function (event) {
     // 1. Prevenir o recarregamento da página ao submeter form
     event.preventDefault();
 
-    fetch('https://localhost:7142/usuario', {
+    fetch('https://localhost:7142/pedido', {
         method: 'POST', //Para outros métodos, basta alterar aqui. Obs: Delete remove a parte do body e headers, e no get é conforme todos os exemplos feitos na Unidade interação com API 
         credentials: 'include',
         headers: {
@@ -23,14 +23,6 @@ myFormLogin.addEventListener('submit', function (event) {
             
         }
         return response.json();
-    }).then(data=>{
-      console.log(data);
-      if(data.tipo=="Funcionário"){
-        window.location.href = "homefunc.html";
-      }else{
-        window.location.href = "homeadm.html";
-      }
-
     })
 
 });

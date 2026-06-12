@@ -73,7 +73,7 @@ myForm1.addEventListener('submit', function (event) {
                 alert ("Faça login antes de editar!");
                 window.location.href="login.html";
             }else{
-                alert ("Prateleira editada!");
+                alert ("Entrega editada!");
             }})
            
     }
