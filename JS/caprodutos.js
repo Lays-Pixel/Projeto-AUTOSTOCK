@@ -24,7 +24,7 @@ myForm1.addEventListener('submit', function (event) {
             alert ("Faça login antes de cadastrar!"); 
             window.location.href="login.html";
         }
-        response.json();})
+        response.json();})  
         .then(data => {
             console.log(data);        
         })
@@ -48,7 +48,7 @@ myForm1.addEventListener('submit', function (event) {
             headers: {
                 'Content-Type': 'application/json',
             },
-            body: JSON.stringify({
+            body: JSON.stringify({ 
                 nome: document.getElementById("nome"+idProduto).value,
                 qnt_estoque: document.getElementById("qnt_estoque"+idProduto).value,
                 tipo_produto: document.getElementById("tipo_produto"+idProduto).value

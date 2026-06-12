@@ -49,9 +49,9 @@ namespace AutoStock.Controllers
                 {
                     return NotFound("Este pedido não existe no banco!");
                 }
-                pedidoDoBanco.DataRecebimento = pedidos.DataRecebimento;
-                pedidoDoBanco.alocado_prateleira = pedidos.alocado_prateleira;
-                pedidoDoBanco.Nome_Produto = pedidos.Nome_Produto;
+                pedidoDoBanco.Data_envio = pedidos.Data_envio;
+                pedidoDoBanco.Nome_fornecedor = pedidos.Nome_fornecedor;
+                pedidoDoBanco.fk_Usuario_Id = pedidos.fk_Usuario_Id;
 
 
                 _context.SaveChanges();

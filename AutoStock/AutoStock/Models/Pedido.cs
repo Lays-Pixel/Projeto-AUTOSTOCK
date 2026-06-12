@@ -6,11 +6,11 @@ namespace AutoStock.Models
     {
         public int Id { get; set; }
 
-        public string DataRecebimento { get; set; }
+        public string Data_envio { get; set; }
 
-        public string alocado_prateleira { get; set; }
+        public string Nome_fornecedor { get; set; }
 
-        public string Nome_Produto { get; set; }
+        public string fk_Usuario_Id { get; set; }
 
     }
 }

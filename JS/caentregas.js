@@ -53,19 +53,32 @@ document.addEventListener("DOMContentLoaded", function () {
 
 });
 
-fetch('', {
-method: 'POST',
-headers: {
-'Content-Type': 'application/json',
-},
-body: JSON.stringify({
-Ndaentregas: 'Ndeentrega',
-Tipodeprodutos: 'tipodeproduto',
-Quantdeentregas: 'quantdeproduto',
-Datadeentregas: 'data'
+const myForm1 = document.getElementById('novoproduto');
+if (myForm1 != null) {
+myForm1.addEventListener('submit', function (event) {
+    // 1. Prevenir o recarregamento da página ao submeter form
+    event.preventDefault();
 
-
-
-}),
-}).then(response => response.json())
-.then(data => console.log(data))
+    fetch('https://localhost:7142/Entrega', {
+        method: 'POST', //Para outros métodos, basta alterar aqui. Obs: Delete remove a parte do body e headers, e no get é conforme todos os exemploes feitos na Unidade interação com API 
+        credentials: 'include',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+            status: document.getElementById("stts").value,
+            capacidade: document.getElementById("capacidade").value   
+        }),
+    }).then(response => {
+        console.log(response);
+        if (response.status ==401){
+            alert ("Faça login antes de cadastrar!"); 
+            window.location.href="login.html";
+        }
+        response.json();})  
+        .then(data => {
+            console.log(data);        
+        })
+});
+}
+    
