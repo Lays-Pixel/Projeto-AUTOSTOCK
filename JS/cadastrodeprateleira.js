@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
         };
 
     
-const myForm1 = document.getElementById('novoproduto');
+const myForm1 = document.getElementById('novaprateleira');
 if (myForm1 != null) {
 myForm1.addEventListener('submit', function (event) {
     // 1. Prevenir o recarregamento da página ao submeter form

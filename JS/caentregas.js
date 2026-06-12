@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 });
 
-const myForm1 = document.getElementById('novoproduto');
+const myForm1 = document.getElementById('novaentrega');
 if (myForm1 != null) {
 myForm1.addEventListener('submit', function (event) {
     // 1. Prevenir o recarregamento da página ao submeter form
@@ -66,14 +66,15 @@ myForm1.addEventListener('submit', function (event) {
             'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-            status: document.getElementById("stts").value,
-            capacidade: document.getElementById("capacidade").value   
+            Data_Recebimento: document.getElementById("Data_Recebimento").value
+             
         }),
     }).then(response => {
         console.log(response);
         if (response.status ==401){
             alert ("Faça login antes de cadastrar!"); 
-            window.location.href="login.html";
+            window.location.href="login.html";             
+
         }
         response.json();})  
         .then(data => {
