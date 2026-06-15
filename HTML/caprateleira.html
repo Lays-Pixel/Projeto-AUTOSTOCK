@@ -12,9 +12,10 @@
 </head>
 <body>
 
-    <div class="container" id="novaprateleira">
+    <div class="container" id="novaprateleira"> 
         <h2>Cadastro de prateleiras</h2>
 
+        <form id="novoproduto">
         <div class="form-group">
             <label for="capacidade" id="capacidade">Capacidade das prateleiras:</label>
             <input type="text" id="capacidade">
@@ -30,16 +31,16 @@
             <label for="stts"> Status da nova prateleira:</label>
             <select id="stts">
             <option value="">Selecione</option>
-            <option value="Livre">Livre</option>
-            <option value=" Parcialmente Completa"> Parcialmente Completa</option>
-            <option value="Completa">Completa</option>
-
+            <option value="Livre">Disponivel</option>
+            <option value="Ocupada">Ocupada</option>
+            <option value="Manutenção">Manutenção</option> 
             </select>
         </div>
 
         <button onclick="cadastrar()">CADASTRAR</button>
+        </form>
     </div>
 
-    <script src="../js/capratileira.js"></script>
+    <script src="../js/caprateleira.js"></script>
 </body> 
 </html>

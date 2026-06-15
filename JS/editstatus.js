@@ -1,4 +1,4 @@
-const myForm1 = document.getElementById('');
+const myForm1 = document.getElementById('frmlario');
 if (myForm1 != null) {
 myForm1.addEventListener('submit', function (event) {
     // 1. Prevenir o recarregamento da página ao submeter form
@@ -11,15 +11,14 @@ myForm1.addEventListener('submit', function (event) {
                 'Content-Type': 'application/json',
             },
             body: JSON.stringify({
-                status: document.getElementById("status"+idPrateleira).value,
-                capacidade: document.getElementById("capacidade"+idPrateleira).value
+                status: document.getElementById("status"+idPrateleira).value
             }),
         }).then(response => {
             if (response.status ==401){
                 alert ("Faça login antes de editar!");
                 window.location.href="login.html";
             }else{
-                alert ("Produto editado!");
+                alert ("Status editado!");
             }})
            
 }

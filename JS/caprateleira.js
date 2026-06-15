@@ -18,7 +18,7 @@ myForm1.addEventListener('submit', function (event) {
     // 1. Prevenir o recarregamento da página ao submeter form
     event.preventDefault();
 
-    fetch('https://localhost:7142/Prateleira', {
+    fetch('https://localhost:7142/prateleira', {
         method: 'POST', //Para outros métodos, basta alterar aqui. Obs: Delete remove a parte do body e headers, e no get é conforme todos os exemploes feitos na Unidade interação com API 
         credentials: 'include',
         headers: {
@@ -26,8 +26,7 @@ myForm1.addEventListener('submit', function (event) {
         },
         body: JSON.stringify({
             capacidade: document.getElementById("capacidade").value,
-            status: document.getElementById("stts").value,
-            identificação: document.getElementById("identificação").value,   
+            status: document.getElementById("stts").value   
 
         }),
     }).then(response => {
@@ -43,7 +42,7 @@ myForm1.addEventListener('submit', function (event) {
 });
 } 
     function editaPrateleira (idPrateleira){
-        fetch('https://localhost:7142/Prateleira'+idPrateleira, {
+        fetch('https://localhost:7142/prateleira'+idPrateleira, {
             method: 'PUT',   
             credentials: 'include',
             headers: {
@@ -51,8 +50,7 @@ myForm1.addEventListener('submit', function (event) {
             },
             body: JSON.stringify({ 
                capacidade: document.getElementById("capacidade"+idPrateleira).value,
-               status: document.getElementById("stts"+idPrateleira).value,
-               identificação: document.getElementById("identificação"+idPrateleira).value
+               status: document.getElementById("stts"+idPrateleira).value
             }),
         }).then(response => {
             if (response.status ==401){
