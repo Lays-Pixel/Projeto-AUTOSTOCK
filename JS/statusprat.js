@@ -1,5 +1,5 @@
 function editaStatusPrateleira (idPrateleira){
-        fetch('https://localhost:7142/Prateleira'+idPrateleira, {
+        fetch('https://localhost:7142/prateleira'+idPrateleira, {
             method: 'PUT',   
             credentials: 'include',
             headers: {

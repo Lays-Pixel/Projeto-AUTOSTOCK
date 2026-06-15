@@ -1,10 +1,9 @@
 function cadastrar() {
     const capacidade = document.getElementById("capacidade").value;
-    const identificação = document.getElementById("identificação").value;
     const stts = document.getElementById("stts").value;
 
 
-    if (capacidade === "" || identificação === "" || stts === "") {
+    if (capacidade === "" || stts === "") {
         alert("Preencha todos os campos!");
         return;
     } else{
@@ -13,8 +12,8 @@ function cadastrar() {
 }
 
     const myForm1 = document.getElementById('novaprateleira');
-if (myForm1 != null) {
-myForm1.addEventListener('submit', function (event) {
+    if (myForm1 != null) {
+    myForm1.addEventListener('submit', function (event) {
     // 1. Prevenir o recarregamento da página ao submeter form
     event.preventDefault();
 
