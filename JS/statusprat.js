@@ -15,5 +15,5 @@ function editaStatusPrateleira (idPrateleira){
             }else{
                 alert ("Status editado!");
             }})
-           
+            
     }

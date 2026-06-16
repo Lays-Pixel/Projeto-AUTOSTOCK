@@ -12,7 +12,8 @@ myFormLogin.addEventListener('submit', function (event) {
         },
         body: JSON.stringify({
             data_envio: document.getElementById("Data_envio").value,
-            nome_fornecedor: document.getElementById("nome_fornecedor").value  
+            nome_fornecedor: document.getElementById("nome_fornecedor").value,
+            fk_usuario_Id: document.getElementById("fk_usuario_Id").value  
         }),
     }).then(response => {
       console.log(response);
