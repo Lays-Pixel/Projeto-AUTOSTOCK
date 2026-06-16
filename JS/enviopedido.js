@@ -12,8 +12,7 @@ myFormLogin.addEventListener('submit', function (event) {
         },
         body: JSON.stringify({
             data_envio: document.getElementById("Data_envio").value,
-            nome_fornecedor: document.getElementById("nome_fornecedor").value,
-            fk_usuario_Id: document.getElementById("fk_usuario_Id").value  
+            nome_fornecedor: document.getElementById("Nome_fornecedor").value
         }),
     }).then(response => {
       console.log(response);
@@ -23,7 +22,7 @@ myFormLogin.addEventListener('submit', function (event) {
             alert("Logado com sucesso");
             
         }
-        return response.json();
+        return response.json(); 
     })
 
 });
